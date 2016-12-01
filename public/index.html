@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="photogallery">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Photo Gallery</title>
+		<!--<base href="/">-->
+		<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/efeitos.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+
+		<link href="css/img/infinite/favicon.ico" rel="icon" type="image/x-icon" />
+
+		<script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-animate.min.js"></script>
+    <script src="js/lib/angular-route.min.js"></script>
+    <script src="js/lib/angular-resource.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/controllers/fotos-controller.js"></script>
+    <script src="js/controllers/foto-controller.js"></script>
+		<script src="js/controllers/grupos-controller.js"></script>
+		<script src="js/controllers/login-controller.js"></script>
+		<script src="js/directives/minhas-diretivas.js"></script>
+    <script src="js/services/meus-servicos.js"></script>
+		<script src="js/services/token-interceptor.js"></script>
+	</head>
+	<body>
+		<div class="container">
+
+			<ng-view></ng-view>
+
+		</div> <!-- fim container -->
+	</body>
+</html>

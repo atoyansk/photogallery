@@ -1,0 +1,35 @@
+<div class="jumbotron">
+	<h1 class="text-center">Photo Gallery</h1>
+	<botao-sair nome="Sign Out" acao="sair()">Sign Out</botao-sair>
+</div>
+
+<p ng-show="mensagem.length" class="alert alert-info">
+	{{mensagem}}
+</p>
+
+<div class="row">
+	<div class="col-md-12">
+		<form>
+			<div class="input-group">
+				<span class="input-group-btn">
+					<a href="/#/fotos/new" class="btn btn-primary" type="button">
+						New Photo
+					</a>
+				</span>
+				<input class="form-control" placeholder="filter your photos"
+					ng-model="filtro" ng-model-options="{ debounce: 500 }">
+		</form>
+	</div> <!-- fim col-md-12 -->
+</div> <!-- fim row -->
+<hr></hr>
+<div class="row">
+    <meu-painel class="col-md-3 painel-animado" ng-repeat="foto in fotos | filter: filtro" titulo="{{foto.titulo}}">
+        <minha-foto url="{{foto.url}}" name="{{foto.titulo}}"></minha-foto>
+				<blockquote class="small">{{foto.descricao}}</blockquote>
+
+		<a class="btn btn-primary btn-block" href="/#/fotos/edit/{{foto._id}}">
+			Edit
+		</a>
+		<meu-botao-perigo nome="Remove" acao="remover(foto)">Remove</meu-botao-perigo>
+    </meu-painel>
+</div>

@@ -1,0 +1,34 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background: #F2F2F2;
+}
+
+.jumbotron {
+    background-color:white !important;
+    border: 1px solid #DDD !important;
+    background-image: url("img/ink.jpg");
+    background-size: cover;
+}
+
+.row-padded {
+  padding: 10px;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+}
+.panel {
+    border: 1px solid #DDD;
+}
+.panel > .panel-heading {
+    min-height: 45px;
+}
+.panel > .panel-footer {
+    min-height: 45px;
+}
+.gray{
+  color: #CFCFCF;
+}
+.input-color{
+  background-color: #F9F9F9;
+}
