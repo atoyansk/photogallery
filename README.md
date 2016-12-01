@@ -1,7 +1,7 @@
 # <h1>Photo Gallery</h1>
 <i>MEAN Stack Simple Gallery App</i>
 
-This project is the result of <strong>MEAN Stack</strong> studies. This is a CRUD image management application with restricted access.
+This project is the result of <strong>MEAN Stack</strong> studies. This is a CRUD image management application with restricted access, developed as a <strong>SPA (Single Page Application)</strong> Web App, with <strong>MVC</strong> concepts.
 
 The application was fully developed in MEAN Stack (MongoDB, Express, AngularJS and Node.js) and also uses Bootstrap, which makes it responsive.
 The application has a Frontend interface developed in <strong>AngularJS</strong>, runs in a server-side structure of <strong>Node.js</strong> with API in <strong>Express</strong>, and has data storage in <strong>MongoDB</strong>.
